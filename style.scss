@@ -1,0 +1,26 @@
+h1 {
+  --penguin-skin: gray;
+  font-size: 40px;
+  text-align: center;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+//.logo
+
+.nav {
+  text-align: right;
+  li {
+    display: inline-flex;
+    list-style-type: none;
+    padding-right: 20px;
+
+    a {
+      color: gold;
+      text-decoration: none;
+      font-size: 30px;
+    }
+  }
+}
+//.nav

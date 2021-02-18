@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <img src="https://static1.squarespace.com/static/5cffc325ad84aa000154316a/t/5d1cecc45bf41a00017a89aa/1611008966705/?format=1500w">
+    <img class="logo" src="https://static1.squarespace.com/static/5cffc325ad84aa000154316a/t/5d1cecc45bf41a00017a89aa/1611008966705/?format=1500w">
     <main>
-        <h1> Basic HTML</h1>
-        <ul>
+        <h1> Join me in my Journey</h1>
+        <nav class="nav">
             <li><a href="#nav-home"> Home</a></li>
             <li><a href="#nav-about">About</a></li>
-            <li><a href="#nav-projects">projects</a></li>
-        </ul>
-        <h2>Join me in my Journey</h2>
+            <li><a href="#nav-projects">Projects</a></li>
+        </nav>
         <a href="#footer">Jump to Bottom</a>
         <p>Hi, my name is LA and I decided to join the 100 days of code.</p>
 
@@ -34,11 +34,30 @@
         </div>
 
         <div>
-            <p>Click here to view more 
+            <p>Click here to view more of my projects
                 <a href="#">
                     <img src="https://www.pinclipart.com/picdir/big/319-3190901_little-black-girl-cartoon-clipart.png" alt="A black girl logo">
                 </a>
             </p>
+        </div>
+
+        <div>
+            <h3>Input Fields</h3>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <input type="text" placeholder="cat photo URL" required>
+                <input type="text" placeholder="this is placeholder text">
+                <button type="submit"> submit</button>
+
+                <input id="indoor" type="radio" value="indoor" name="indoor-outdoor">Indoor 
+                </label>
+
+                <label for="outdoor"> 
+                <input id="outdoor" type="radio" value="outdoor" name="indoor-outdoor">Outdoor 
+                </label>
+                <label for="loving"><input id="loving" value="loving" type="checkbox" name="personality"> Loving</label>
+                <label for="Funny"><input id="Funny" value="funny" type="checkbox" name="personality"> Funny</label>
+                <label for="smart"><input id="smart" value="smart" type="checkbox" name="personality"> smart</label>
+            </form>
         </div>
     </main>
     <footer id="footer">Copyright 2021 </footer>
