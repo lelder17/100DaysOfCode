@@ -4,7 +4,6 @@ $color-soft-pink: #ffddd2;
 $color-teal: #006d77;
 $color-sea-green: #83c5be;
 body {
-  background: $color-soft-pink;
   height: 100vh;
   background-repeat: no-repeat;
 }
@@ -25,6 +24,16 @@ h1 {
   width: 50px;
 }
 //.logo
+
+.index-main {
+  background: $color-soft-pink;
+}
+//.index-main
+
+.home-main {
+  background: $color-sea-green;
+}
+//.home-main
 
 .nav {
   text-align: right;
