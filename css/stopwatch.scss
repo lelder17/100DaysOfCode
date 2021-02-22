@@ -1,0 +1,25 @@
+$color-skyblue: #ccffff;
+$color-rose-pink: #e29578;
+$color-soft-pink: #ffddd2;
+$color-teal: #006d77;
+$color-sea-green: #83c5be;
+
+.stopwatch-container {
+  background-color: $color-teal;
+  border: 1px solid $color-sea-green;
+  height: 50px;
+  width: 50px;
+}
+//.stopwatch-container
+
+.time {
+  text-align: center;
+}
+
+h1 {
+  color: $color-sea-green;
+}
+
+#display {
+  margin: 0 auto;
+}
