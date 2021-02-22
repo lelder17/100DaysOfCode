@@ -1,0 +1,291 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #006d77;
+  height: 100vh;
+}
+
+#display {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.stopwatch-container {
+  background-color: #e07a5f;
+  color: #fff;
+  height: 250px;
+  width: 450px;
+  margin: 0 auto;
+}
+.stopwatch-container h1 {
+  color: #ece4db;
+  padding: 20px 0;
+}
+
+.time {
+  text-align: center;
+}
+
+.stopwatch__button-container {
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stopwatch__button-container button {
+  border: 3px solid #ece4db;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  color: #e29578;
+  font-size: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.index-main {
+  background: #ffddd2;
+  height: 100vh;
+}
+
+.home-main {
+  background: #83c5be;
+  height: 100vh;
+}
+
+.nav {
+  min-height: 80px;
+  padding: 10px;
+  text-align: right;
+}
+.nav li {
+  display: inline-flex;
+  list-style-type: none;
+  padding-right: 20px;
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-container {
+  background-color: #e29578;
+  border-radius: 10px;
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-enter {
+  font-size: 20px;
+}
+.button-enter button {
+  margin: 0 auto;
+  position: absolute;
+  padding: 8px 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #006d77;
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

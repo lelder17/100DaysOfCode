@@ -1,0 +1,52 @@
+@import 'colors';
+
+body {
+  background-color: $color-teal;
+  height: 100vh;
+}
+//body
+
+#display {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.stopwatch-container {
+  background-color: $color-blush-pink;
+  color: $color-white;
+  height: 250px;
+  width: 450px;
+  margin: 0 auto;
+
+  h1 {
+    color: $color-dessert-green;
+    padding: 20px 0;
+  }
+}
+//.stopwatch-container
+
+.time {
+  text-align: center;
+}
+
+.stopwatch {
+  &__button-container {
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      border: 3px solid $color-dessert-green;
+      background-color: transparent;
+      color: $color-white;
+      cursor: pointer;
+      font-size: 18px;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+  }
+}
