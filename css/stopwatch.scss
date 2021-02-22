@@ -7,6 +7,8 @@ $color-sea-green: #83c5be;
 .stopwatch-container {
   background-color: $color-teal;
   border: 1px solid $color-sea-green;
+  height: 50px;
+  width: 50px;
 }
 //.stopwatch-container
 
@@ -15,5 +17,9 @@ $color-sea-green: #83c5be;
 }
 
 h1 {
-  color: red;
+  color: $color-sea-green;
+}
+
+#display {
+  margin: 0 auto;
 }
