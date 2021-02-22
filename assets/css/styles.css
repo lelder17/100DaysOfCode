@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 html,
 body,
 div,
@@ -209,6 +210,58 @@ body {
   text-transform: uppercase;
 }
 
+body {
+  background-color: #000;
+}
+
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock {
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  font-size: 70px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  background: #000;
+  border-radius: 10px;
+  height: 96px;
+  width: 490px;
+  bottom: 0;
+  top: 2px;
+  left: 0;
+  right: 0;
+}
+.clock span {
+  margin-top: 10px;
+  display: inline-flex;
+}
+
+.display {
+  position: relative;
+}
+
+.wrapper {
+  height: 100px;
+  width: 500px;
+  position: relative;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  cursor: default;
+  margin: 0 auto;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 body {
   height: 100vh;
 }

@@ -1,0 +1,62 @@
+@import 'colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  background-color: $color-black;
+}
+
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock {
+  color: $color-white;
+  font-family: 'Fredoka One', cursive;
+  font-size: 70px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  background: $color-black;
+  border-radius: 10px;
+  height: 96px;
+  width: 490px;
+  bottom: 0;
+  top: 2px;
+  left: 0;
+  right: 0;
+
+  span {
+    margin-top: 10px;
+    display: inline-flex;
+  }
+  //span
+}
+//.clock
+
+.display {
+  position: relative;
+}
+//.display
+
+.wrapper {
+  height: 100px;
+  width: 500px;
+  position: relative;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 10px;
+  cursor: default;
+  margin: 0 auto;
+  animation: animate 1.5s linear infinite;
+}
+//.wrapper
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+//@keyframes
