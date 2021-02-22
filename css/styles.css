@@ -1,5 +1,4 @@
 body {
-  background: #ffddd2;
   height: 100vh;
   background-repeat: no-repeat;
 }
@@ -20,6 +19,15 @@ h1 {
 .logo {
   height: 50px;
   width: 50px;
+}
+
+.index-main {
+  background: #ffddd2;
+  height: 100vh;
+}
+
+.home-main {
+  background: #83c5be;
 }
 
 .nav {
@@ -58,7 +66,11 @@ h1 {
           justify-content: center;
 }
 
-button {
+.button-enter {
+  font-size: 20px;
+}
+
+.button-enter button {
   margin: 0 auto;
   position: absolute;
   padding: 8px 20px;
@@ -68,7 +80,9 @@ button {
   border: none;
 }
 
-.button-enter {
-  font-size: 20px;
+.stopwatch-container {
+  background-color: #006d77;
+  border: 1px solid #83c5be;
+  color: white;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

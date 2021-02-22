@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <img
-      class="logo"
-      src="https://static1.squarespace.com/static/5cffc325ad84aa000154316a/t/5d1cecc45bf41a00017a89aa/1611008966705/?format=1500w"
-    />
     <main class="index-main">
+      <img
+        class="logo"
+        src="https://static1.squarespace.com/static/5cffc325ad84aa000154316a/t/5d1cecc45bf41a00017a89aa/1611008966705/?format=1500w"
+      />
       <h1>100 Days of Code by LA</h1>
 
       <div class="button-container">
-        <button id="js-button" class="button-enter">Enter</button>
+        <button onclick="init()" id="js-button" class="button-enter">
+          Enter
+        </button>
       </div>
     </main>
     <footer id="footer">Copyright 2021</footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

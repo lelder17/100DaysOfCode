@@ -27,6 +27,7 @@ h1 {
 
 .index-main {
   background: $color-soft-pink;
+  height: 100vh;
 }
 //.index-main
 
@@ -64,18 +65,18 @@ h1 {
 }
 //.button-container
 
-button {
-  margin: 0 auto;
-  position: absolute;
-  padding: 8px 20px;
-  cursor: pointer;
-  background-color: #fff;
-  color: $color-teal;
-  border: none;
-}
-
 .button-enter {
   font-size: 20px;
+
+  button {
+    margin: 0 auto;
+    position: absolute;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: $color-teal;
+    border: none;
+  }
 }
 //.button-enter
 
@@ -147,3 +148,10 @@ button {
 //     transform: scale(0.6) rotate(-45deg);
 //   }
 // }
+
+.stopwatch-container {
+  background-color: $color-teal;
+  border: 1px solid $color-sea-green;
+  color: white;
+}
+//.stopwatch-container

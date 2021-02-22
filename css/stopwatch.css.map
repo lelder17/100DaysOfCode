@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,oBAAoB,CAAC;EACnB,gBAAgB,EAJL,OAAO;EAKlB,MAAM,EAAE,GAAG,CAAC,KAAK,CAJD,OAAO;CAKxB;;AAGD,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAG;CACX",
+    "sources": [
+        "stopwatch.scss"
+    ],
+    "names": [],
+    "file": "stopwatch.css"
+}
