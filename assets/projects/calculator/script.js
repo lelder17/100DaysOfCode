@@ -1,21 +1,21 @@
 //create cal buttons
 let calc_buttons = [
   {
-    name: 'delete',
-    symbol: '',
-    formula: false,
-    type: 'key',
-  },
-  {
     name: 'clear',
-    symbol: 'C',
+    symbol: 'Clear',
     formula: false,
     type: 'key',
   },
   {
-    name: 'multiplication',
-    symbol: 'X',
-    formula: '*',
+    name: 'delete',
+    symbol: 'Delete',
+    formula: false,
+    type: 'key',
+  },
+  {
+    name: 'percent',
+    symbol: '%',
+    formula: '%',
     type: 'operator',
   },
   {
@@ -25,21 +25,9 @@ let calc_buttons = [
     type: 'operator',
   },
   {
-    name: 'additional',
-    symbol: '+',
-    formula: '+',
-    type: 'operator',
-  },
-  {
-    name: 'subtraction',
-    symbol: '-',
-    formula: '-',
-    type: 'operator',
-  },
-  {
-    name: '9',
-    symbol: '9',
-    formula: '9',
+    name: '7',
+    symbol: '7',
+    formula: '7',
     type: 'number',
   },
   {
@@ -49,15 +37,21 @@ let calc_buttons = [
     type: 'number',
   },
   {
-    name: '7',
-    symbol: '7',
-    formula: '7',
+    name: '9',
+    symbol: '9',
+    formula: '9',
     type: 'number',
   },
   {
-    name: '6',
-    symbol: '6',
-    formula: '6',
+    name: 'multiplication',
+    symbol: 'X',
+    formula: '*',
+    type: 'operator',
+  },
+  {
+    name: '4',
+    symbol: '4',
+    formula: '4',
     type: 'number',
   },
   {
@@ -67,15 +61,21 @@ let calc_buttons = [
     type: 'number',
   },
   {
-    name: '4',
-    symbol: '4',
-    formula: '4',
+    name: '6',
+    symbol: '6',
+    formula: '6',
     type: 'number',
   },
   {
-    name: '3',
-    symbol: '3',
-    formula: '3',
+    name: 'subtraction',
+    symbol: '-',
+    formula: '-',
+    type: 'operator',
+  },
+  {
+    name: '1',
+    symbol: '1',
+    formula: '1',
     type: 'number',
   },
   {
@@ -85,9 +85,21 @@ let calc_buttons = [
     type: 'number',
   },
   {
-    name: '1',
-    symbol: '1',
-    formula: '1',
+    name: '3',
+    symbol: '3',
+    formula: '3',
+    type: 'number',
+  },
+  {
+    name: 'additional',
+    symbol: '+',
+    formula: '+',
+    type: 'operator',
+  },
+  {
+    name: '0',
+    symbol: '0',
+    formula: '0',
     type: 'number',
   },
   {
@@ -116,7 +128,7 @@ function createButtons() {
 
     const row = document.querySelector('.row:last-child');
 
-    row.innerHTML += `<button id="${button.name}">
+    row.innerHTML += `<button class="${button.type}" id="${button.name}">
                         ${button.symbol}
                     </button>`;
     added_btns++;

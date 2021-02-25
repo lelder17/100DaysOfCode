@@ -1,0 +1,71 @@
+@import 'colors';
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+main {
+  background: linear-gradient(
+    $color-hot-pink,
+    $color-rose-pink,
+    $color-blush-pink
+  );
+  font-family: 'Anton', sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+.calc {
+  background-color: $color-night;
+  box-shadow: 10px 10px 45px 0 rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//.calc
+
+.result {
+  border-bottom: 5px solid $color-hot-pink;
+  height: 60px;
+}
+//.result
+
+.value {
+  color: $color-white;
+  text-align: right;
+  margin: 20px;
+}
+//.value
+
+button {
+  background-color: transparent;
+  border: none;
+  width: 80px;
+  height: 80px;
+
+  &:hover {
+    box-shadow: 10px 10px 45px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: $color-white;
+    cursor: pointer;
+  }
+}
+//button
+
+button#calculate {
+  float: right;
+  clear: both;
+}
+//button#calculate
+
+.number {
+  color: $color-hot-pink;
+}
+//.number
+
+.operator,
+.key,
+.calculate {
+  color: $color-teal;
+}
+//.operator
