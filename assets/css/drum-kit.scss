@@ -1,0 +1,40 @@
+@import 'colors';
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  height: 25px;
+  width: 25px;
+  border: 3px solid black;
+  display: inline-flex;
+  margin: 20px;
+  cursor: pointer;
+
+  span {
+    font-family: 'Handlee', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+  }
+}
+//.button
+
+.container {
+  border: 1px solid $color-blush-pink;
+  height: 200px;
+  text-align: center;
+}
+//.container
+
+.pressed {
+  opacity: 0.5;
+  box-shadow: -1px -1px 3px red;
+}
