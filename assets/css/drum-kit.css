@@ -108,7 +108,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -166,41 +166,46 @@ select {
 }
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, #ff006e, #006d77);
+  height: 100vh;
 }
 
 .button {
   height: 25px;
   width: 25px;
-  border: 3px solid black;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+  border: 3px solid #006d77;
   display: inline-flex;
   margin: 20px;
   cursor: pointer;
 }
-
 .button span {
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
   padding: 5px;
+  color: #fff;
 }
 
 .container {
-  border: 1px solid #e07a5f;
+  border: 2px solid #fff;
   height: 200px;
   text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .pressed {
   opacity: 0.5;
-  -webkit-box-shadow: -1px -1px 3px red;
-          box-shadow: -1px -1px 3px red;
+  box-shadow: -1px -1px 3px #ffddd2;
 }
+
+.title {
+  font-size: 30px;
+  color: #fff;
+}
+
 /*# sourceMappingURL=drum-kit.css.map */

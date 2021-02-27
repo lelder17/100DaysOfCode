@@ -3,16 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, $color-hot-pink, $color-teal);
+  height: 100vh;
 }
 
 .button {
   height: 25px;
   width: 25px;
-  border: 3px solid black;
+  border: 3px solid $color-teal;
   display: inline-flex;
   margin: 20px;
   cursor: pointer;
@@ -23,18 +21,30 @@ main {
     text-align: center;
     margin: 0 auto;
     padding: 5px;
+    color: $color-white;
   }
 }
 //.button
 
 .container {
-  border: 1px solid $color-blush-pink;
+  border: 2px solid $color-white;
   height: 200px;
   text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 //.container
 
 .pressed {
   opacity: 0.5;
-  box-shadow: -1px -1px 3px red;
+  box-shadow: -1px -1px 3px $color-soft-pink;
+}
+//.pressed
+
+.title {
+  font-size: 30px;
+  color: $color-white;
 }
