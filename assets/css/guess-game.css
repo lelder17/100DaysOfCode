@@ -108,7 +108,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -164,3 +164,37 @@ input,
 select {
   vertical-align: middle;
 }
+
+main {
+  background-color: #83c5be;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+p {
+  margin: 15px;
+}
+
+input {
+  margin: 25px auto;
+  width: 100px;
+}
+
+.container {
+  border: 2px solid #83c5be;
+  height: 275px;
+  width: 750px;
+  padding: 20px;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=guess-game.css.map */

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 html,
 body,
 div,
@@ -448,6 +449,55 @@ hr {
 input,
 select {
   vertical-align: middle;
+}
+
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff006e), to(#006d77));
+  background: linear-gradient(to bottom, #ff006e, #006d77);
+  height: 100vh;
+}
+
+.button {
+  height: 25px;
+  width: 25px;
+  border: 3px solid #006d77;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.button span {
+  font-family: 'Handlee', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  color: #fff;
+}
+
+.container {
+  border: 2px solid #fff;
+  height: 200px;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pressed {
+  opacity: 0.5;
+  -webkit-box-shadow: -1px -1px 3px #ffddd2;
+          box-shadow: -1px -1px 3px #ffddd2;
+}
+
+.title {
+  font-size: 30px;
+  color: #fff;
 }
 
 body {

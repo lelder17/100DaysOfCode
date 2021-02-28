@@ -78,6 +78,7 @@ video {
 
 body {
   line-height: 1;
+  height: 100vh;
 }
 
 article,
@@ -163,15 +164,4 @@ input,
 select {
   vertical-align: middle;
 }
-
-/* Set box model to border-box. */
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+/*# sourceMappingURL=reset.css.map */
