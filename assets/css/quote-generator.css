@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 html,
 body,
 div,
@@ -78,6 +81,7 @@ video {
 
 body {
   line-height: 1;
+  height: 100vh;
 }
 
 article,
@@ -107,7 +111,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -163,3 +167,56 @@ input,
 select {
   vertical-align: middle;
 }
+
+main {
+  background-color: #ece4db;
+  height: 100vh;
+}
+
+.author {
+  font-size: 12px;
+  text-align: right;
+}
+
+.btn-container {
+  padding-top: 20px;
+}
+
+#btn {
+  background-color: transparent;
+  border: 1px solid #e07a5f;
+  color: #e07a5f;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: #e07a5f;
+  color: white;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px dotted #83c5be;
+  width: 700px;
+}
+
+.quote-content {
+  color: #e07a5f;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  padding: 10px 0 5px 0;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=quote-generator.css.map */
