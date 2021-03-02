@@ -1,0 +1,241 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  height: 100vh;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+.choose {
+  padding: 10px;
+  background-color: #000;
+}
+
+ul.theme-colors {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theme-colors li {
+  display: inline-flex;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.theme-colors li:nth-child(1) {
+  background: #e07a5f;
+}
+
+.theme-colors li:nth-child(2) {
+  background: #003049;
+}
+
+.theme-colors li:nth-child(3) {
+  background: #ff006e;
+}
+
+.theme-colors li:nth-child(4) {
+  background: #006d77;
+}
+
+.theme-colors li:nth-child(5) {
+  background: #e29578;
+}
+
+.theme-colors li:nth-child(6) {
+  background: paleturquoise;
+}
+
+.theme-colors li:nth-child(7) {
+  background: peachpuff;
+}
+
+.theme-colors li:nth-child(8) {
+  background: powderblue;
+}
+
+.theme-colors li:nth-child(9) {
+  background: purple;
+}
+
+.theme-button {
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.title,
+.subtitle {
+  font-size: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 45px;
+}
+
+/*# sourceMappingURL=color-switcher.css.map */
