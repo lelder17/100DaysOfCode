@@ -38,7 +38,7 @@ const generateColors = () => {
           divs[i].appendChild(alertBox); //add div to page
 
           //call write text to write on clipboard
-          window.navigator.clipboard.writeText(`${color}`);
+          window.navigator.clipboard.writeText(`${colors[i * 2]}`);
 
           function hide() {
             divs[i].classList.add('hidden');
