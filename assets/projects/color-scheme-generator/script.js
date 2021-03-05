@@ -3,10 +3,12 @@ const randomNumber = () => {
   return Math.floor(Math.random() * 360);
 };
 
+//create a color scheme object
+const scheme = new ColorScheme();
+let alertBox = document.createElement('div');
+
 //create a function to generate colors
 const generateColors = () => {
-  //create a color scheme object
-  const scheme = new ColorScheme();
   scheme
     .from_hue(randomNumber())
     .scheme('triade')
@@ -21,21 +23,36 @@ const generateColors = () => {
     const color = `#${colors[i * 2]}`;
     el.style.backgroundColor = color;
     el.innerHTML = color;
+
+    function copyHexValue() {
+      // get all .color-divs on page
+      const divs = document.getElementsByClassName('color-divs');
+
+      //loop over divs to get all .color-divs on page
+      for (let i = 0; i < divs.length; i++) {
+        divs[i].addEventListener('click', () => {
+          alertBox.className = 'alert-box'; //add  class name
+          alertBox.innerHTML = `The color #${
+            colors[i * 2]
+          } has been copied to your clipboard`; //set inner html
+          divs[i].appendChild(alertBox); //add div to page
+
+          //call write text to write on clipboard
+          window.navigator.clipboard.writeText(`${color}`);
+
+          function hide() {
+            divs[i].classList.add('hidden');
+          }
+          setTimeout(hide, 4000);
+          console.log(alertBox);
+        });
+      }
+    }
   }
+
+  copyHexValue();
 };
 
-function copyHexValue() {
-  const divs = document.getElementsByClassName('color-divs');
-  for (let i = 0; i < divs.length; i++) {
-    console.log(divs[i]);
-
-    //call write text to write on clipboard
-    divs[i].addEventListener('click', () => {
-      window.navigator.clipboard.writeText(divs[i].innerHTML);
-    });
-  }
-}
-copyHexValue();
 const generateButton = document.getElementById('generate');
 //every time button is clicked generateColors function is called
 generateButton.addEventListener('click', generateColors);
