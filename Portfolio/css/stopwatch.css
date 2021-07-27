@@ -1,0 +1,13 @@
+.stopwatch-container {
+  background-color: #006d77;
+  border: 1px solid #83c5be;
+}
+
+.time {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
+/*# sourceMappingURL=stopwatch.css.map */

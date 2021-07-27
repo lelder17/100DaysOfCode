@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- REACT DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- REACT DOM -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Class Components</title>
+  </head>
+  <body>
+    <div id="app">React has not rendered yet</div>
+
+    <script type="text/babel">
+      // OUR FIRST CLASS COMPONENT
+      class Shapes extends React.Component {
+        render() {
+          return <h1>Circle, Square, Rectangle</h1>;
+        }
+      }
+      class Circle extends React.Component {
+        render() {
+          const circleStyle = {
+            width: 100,
+            height: 100,
+            marginBottom: '20',
+            textAlign: 'center',
+            background: 'red',
+            borderRadius: '50%',
+          };
+          return <h1 style={circleStyle}>Circle</h1>;
+        }
+      }
+      class Square extends React.Component {
+        render() {
+          const squareStyle = {
+            width: 100,
+            height: 100,
+            marginBottom: '20',
+            textAlign: 'center',
+            background: 'red',
+          };
+          return <h1 style={squareStyle}>Square</h1>;
+        }
+      }
+      class Rectangle extends React.Component {
+        render() {
+          const rectangleStyle = {
+            width: 200,
+            height: 100,
+            marginBottom: '20',
+            textAlign: 'center',
+            background: 'red',
+          };
+          return <h1 style={rectangleStyle}>Rectangle</h1>;
+        }
+      }
+
+      // CHALLENGE
+      // CREATE CLASS COMPONENT FOR CIRCLE SQUARE & RECTANGLE
+      // rENDER TO DOM WITHIN PARENT DIV
+
+      ReactDOM.render(
+        // REACT WHAT - JSX
+        <div>
+          <Circle />
+          <Square />
+          <Rectangle />
+        </div>,
+        //REACT WHERE - DIV WITH ID OF 'APP'
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- REACT DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- REACT DOM -->
+    <title>Stateless Functional Components</title>
+  </head>
+  <body>
+    <div id="app">React has not rendered yet</div>
+
+    <script type="text/babel">
+      // OUR FIRST STATELESS COMPONENT
+      // COMPONENT IS CAPITALIZED
+      // ONE RETURN STATEMENT
+      const ColorSpectrum = function () {
+        return <h1> Red, Orange, Yellow, Green, Blue, Indigo, Violet </h1>;
+      };
+
+      // CHALLENGE
+      // CREATE A COMPONENT FOR ALL COLORS & RENDER THEM TO DOM WITHIN ONE DIV
+
+      const Red = () => {
+        const redStyle = {
+          color: 'white',
+          backgroundColor: 'red',
+        };
+        return <h1 style={redStyle}>Red</h1>;
+      };
+      const Orange = () => {
+        const orangeStyle = {
+          color: 'white',
+          backgroundColor: 'orange',
+        };
+        return <h1 style={orangeStyle}>Orange</h1>;
+      };
+      const Yellow = () => {
+        const yellowStyle = {
+          color: 'white',
+          backgroundColor: 'yellow',
+        };
+        return <h1 style={yellowStyle}>Yellow</h1>;
+      };
+      const Green = () => {
+        const greenStyle = {
+          color: 'white',
+          backgroundColor: 'green',
+        };
+        return <h1 style={greenStyle}>Green</h1>;
+      };
+      const Blue = () => {
+        const blueStyle = {
+          color: 'white',
+          backgroundColor: 'blue',
+        };
+        return <h1 style={blueStyle}>Blue</h1>;
+      };
+      const Indigo = () => {
+        const indigoStyle = {
+          color: 'white',
+          backgroundColor: 'indigo',
+        };
+        return <h1 style={indigoStyle}>Indigo</h1>;
+      };
+      const Violet = () => {
+        const violetStyle = {
+          color: 'white',
+          backgroundColor: 'violet',
+        };
+        return <h1 style={violetStyle}>Violet</h1>;
+      };
+
+      ReactDOM.render(
+        // REACT WHAT - JSX
+        <div>
+          <Red />
+          <Orange />
+          <Yellow />
+          <Green />
+          <Blue />
+          <Indigo />
+          <Violet />
+        </div>,
+        //REACT WHERE - DIV WITH ID OF 'APP'
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>

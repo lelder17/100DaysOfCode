@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- REACT DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- REACT DOM -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Stateless Functional Components</title>
+  </head>
+  <body>
+    <div id="app">React has not rendered yet</div>
+
+    <script type="text/babel">
+      // OUR FIRST STATELESS COMPONENT
+      // COMPONENT IS CAPITALIZED
+      // ONE RETURN STATEMENT
+      const ColorSpectrum = function () {
+        return <h1> Red, Orange, Yellow, Green, Blue, Indigo, Violet </h1>;
+      };
+
+      // CHALLENGE
+      // CREATE A COMPONENT FOR ALL COLORS & RENDER THEM TO DOM WITHIN ONE DIV
+
+      const Red = () => {
+        return <h1 className='red'>Red</h1>;
+      };
+      const Orange = () => {
+        return <h1 className='orange'>Orange</h1>;
+      };
+      const Yellow = () => {
+        return <h1 className='yellow'>Yellow</h1>;
+      };
+      const Green = () => {
+        return <h1 className='green'>Green</h1>;
+      };
+      const Blue = () => {
+        return <h1 className='blue'>Blue</h1>;
+      };
+      const Indigo = () => {
+        return <h1 className='indigo'>Indigo</h1>;
+      };
+      const Violet = () => {
+        return <h1 className='violet'>Violet</h1>;
+      };
+
+      ReactDOM.render(
+        // REACT WHAT - JSX
+        <div>
+          <Red />
+          <Orange />
+          <Yellow />
+          <Green />
+          <Blue />
+          <Indigo />
+          <Violet />
+        </div>,
+        //REACT WHERE - DIV WITH ID OF 'APP'
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>
