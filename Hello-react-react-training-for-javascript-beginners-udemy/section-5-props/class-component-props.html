@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- REACT DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Class Component Props</title>
+  </head>
+  <body>
+    <div id="app">React has not rendered yet</div>
+
+    <!-- Javascript -->
+    <script type="text/babel">
+      class PersonGreeting extends React.Component {
+        render() {
+          const personStyle = {
+            height: 300,
+            width: 300,
+            backgroundColor: this.props.color,
+          };
+          return <div style={personStyle}>Hello, {this.props.name}! </div>;
+        }
+      }
+      ReactDOM.render(
+        <div>
+          <PersonGreeting color='tomato' name='Jimmy' />
+          <PersonGreeting color='pink' name='Jess' />
+          <PersonGreeting color='blue' name='Rob2' />
+        </div>,
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>

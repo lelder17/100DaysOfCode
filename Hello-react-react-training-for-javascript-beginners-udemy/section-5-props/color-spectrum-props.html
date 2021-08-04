@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- REACT DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- REACT DOM -->
+    <title>Color Spectrum Components</title>
+  </head>
+  <body>
+    <div id="app">React has not rendered yet</div>
+
+    <script type="text/babel">
+      // CHALLENGE - CREATE ONE COMPONENT
+      // USE PROPS TO RE-CERATE THE COLORSPECTRUM RESULTS
+
+      const ColorTitle = function (props) {
+        const colorstyles = {
+          height: 20,
+          textAlign: 'center',
+          backgroundColor: props.color,
+        };
+        return <h1 style={colorstyles}>{props.name}</h1>;
+      };
+      const ColorSpectrumPropsComponent = (props) => {
+        const colorstyles = {
+          height: 80,
+          color: 'white',
+          textTransform: 'uppercase',
+          fontSize: 50,
+          fontWeight: 600,
+          marginBottom: 20,
+          width: '100%',
+          backgroundColor: props.color,
+        };
+        return <div style={colorstyles}>{props.color}</div>;
+      };
+
+      ReactDOM.render(
+        // REACT WHAT - JSX
+        <div>
+          <ColorTitle name='Color Props Components' />
+          <ColorSpectrumPropsComponent color='red' />
+          <ColorSpectrumPropsComponent color='orange' />
+          <ColorSpectrumPropsComponent color='yellow' />
+          <ColorSpectrumPropsComponent color='blue' />
+          <ColorSpectrumPropsComponent color='green' />
+          <ColorSpectrumPropsComponent color='indigo' />
+          <ColorSpectrumPropsComponent color='violet' />
+        </div>,
+        //REACT WHERE - DIV WITH ID OF 'APP'
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>
