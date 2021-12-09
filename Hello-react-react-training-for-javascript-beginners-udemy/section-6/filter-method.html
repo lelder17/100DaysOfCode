@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- REACT DOM -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Map</title>
+  </head>
+  <body>
+    <div id="app">React has not rendered yet</div>
+
+    <script type="text/babel">
+      // CREATE FamilyList component
+      function FamilyList(props) {
+        // assign props.siblings to siblings variable to clean up code (optional)
+        var siblings = props.siblings;
+
+        // Use the filter method to only show female siblings
+        // var siblings = siblings.filter(function(person) {
+        //   return person.female;
+        // });
+        // METHOD CHAINING
+        var siblingsListItem = siblings
+          .filter(function (person) {
+            return person.female;
+          })
+          .map(function (person) {
+            return <div key={person.id}>{person.name}</div>;
+          });
+        return <div>{siblingsListItem}</div>;
+      }
+
+      // ARRAY OF OBJECTS - 3 PROPS (ID, NAME AND FEMALE) 3 VALUES (NUMBER, STRING, BOOLEAN)
+      var siblings = [
+        { id: 1, name: 'Chris', female: false },
+        { id: 2, name: 'Jeff', female: false },
+        { id: 3, name: 'Julie', female: true },
+        { id: 4, name: 'Jessica', female: true },
+      ];
+      ReactDOM.render(
+        // REACT WHAT - JSX
+        <div>
+          <FamilyList siblings={siblings} />
+        </div>,
+        //REACT WHERE - DIV WITH ID OF 'APP'
+        document.getElementById('app')
+      );
+    </script>
+  </body>
+</html>
