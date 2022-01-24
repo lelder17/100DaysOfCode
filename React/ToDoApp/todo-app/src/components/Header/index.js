@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return(
-        <div className='app-title'>What needs to be done today??</div>
+        <div className='app-title'>To Do List</div>
     )
 }
 

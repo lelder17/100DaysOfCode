@@ -1,4 +1,38 @@
+@import-normalize; /* bring in normalize.css styles */
+
+fieldset {
+    border: none;
+    display: inline-block;
+}
+/* fieldset */
+
+input {
+    font-size: 30px;
+    min-width: 600px;
+}
+/* input */
+
+button {
+    font-size: 30px;
+    display: inline-block;
+}
+/* button */
+
+.App {
+    border: 8px dotted palevioletred;
+    height: 50vh;
+    width: 50vw;
+    margin: 0 auto;
+}
+/* .App */
+
 .app-title {
     font-size: 35px;
     text-align: center;
+}
+/* .app-title */
+
+
+.form-wrapper {
+    display: flex;
 }
