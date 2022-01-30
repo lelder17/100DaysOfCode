@@ -1,30 +1,40 @@
-import React, {useState} from "react";
+import React, { useState } from 'react';
 
-function Form() {
+//pass any props to Form function
+function Form({ setInput, inputValue, todos, setTodos }) {
+  const newInputValue = (e) => {
+    e.preventDefault();
+    setInput(e.target.value); //setting new state to new input value
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('click')
-    }
-
-    const [addItem, setAddItem] = useState(true)
-    const [isCompleted, setCompleted] = useState(false);
-
-
-
-    return (
-        <form>
+  const handleSubmitButton = (e) => {
+    e.preventDefault();
+    setTodos([
+      ...todos,
+      {
+        id: Math.random() * 1000,
+        text: inputValue,
+        completed: false,
+      },
+    ]);
+    inputValue(''); //set state back to empty string
+  };
+  return (
+    <form>
       {/* add input field and submit button */}
-        <div className='form-wrapper'>
-          <fieldset>
-          <label>
-            <input name='item' placeholder='What do we need to accomplish today?'></input>
-          </label>
-          </fieldset>
-          <button onClick={handleSubmit}>Add !</button>
-        </div>
-      </form>
-    )
+      <div className='form-wrapper'>
+        <input
+          type='text'
+          name='item'
+          placeholder='What do we need to accomplish today?'
+          onChange={newInputValue}
+        ></input>
+        <button type='submit' onClick={handleSubmitButton}>
+          Add Todo!
+        </button>
+      </div>
+    </form>
+  );
 }
 
 export default Form;
