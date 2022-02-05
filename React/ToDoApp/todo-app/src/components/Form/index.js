@@ -17,7 +17,7 @@ function Form({ setInput, inputValue, todos, setTodos }) {
         completed: false,
       },
     ]);
-    inputValue(''); //set state back to empty string
+    setInput(''); //set state back to empty string
   };
   return (
     <form>
@@ -27,6 +27,7 @@ function Form({ setInput, inputValue, todos, setTodos }) {
           type='text'
           name='item'
           placeholder='What do we need to accomplish today?'
+          value={inputValue}
           onChange={newInputValue}
         ></input>
         <button type='submit' onClick={handleSubmitButton}>
